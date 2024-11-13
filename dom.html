@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="itemList">
+        <li>Buy groceries</li>
+        <li>Attend urgent meeting</li>
+        <li>Appointment with doctor</li>
+        <li>Complete JavaScript project</li>
+        <li>Urgent: Pay bills</li>
+        <li>Avoid unnecessary expenses</li>
+    </ul>
+    
+
+
+    <script>
+        
+        var elements = document.querySelectorAll('#itemList li');       
+
+        elements.forEach((element) => {
+
+        const text = element.textContent;
+
+        if (text.toLowerCase().includes('urgent')) {
+            element.style.color = 'red';
+        }
+        else if (text.length > 20) {
+            element.style.backgroundColor = 'yellow'
+        }
+        else if (text.startsWith('A')) {
+            element.style.fontSize = '20px';
+        }
+        })
+
+    
+    </script>
+</body>
+</html>

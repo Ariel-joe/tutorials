@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // first way
+
+<!-- <button onclick='foo()'>button 1</button> -->
+
+
+
+ // the second way
+
+
+    <button>button 2</button>
+    
+
+    <button>Submit Me</button>
+
+
+
+ // Getting the button
+
+ 
+
+// the third way
+
+    <!-- <button id="btn-alert">click Me</button> -->
+
+
+<script>
+
+    
+
+
+
+    function foo () {
+        alert("my name is Joe");
+    }
+
+      // Getting the button
+    let btn = document.querySelector('button');
+
+    btn.addEventListener('click', foo);
+
+      btn.removeEventListener('click', foo);
+
+
+
+    // second button
+
+    // var btnTwo = document.getElementById('btn-2');
+
+    // btnTwo.onclick= function foo () {
+    //     alert("my name is Joe");
+    // };
+
+
+    // third button
+
+    // var btn = document.getElementById('btn-alert');
+
+    // btn.addEventListener('click', function() {
+    //     alert("my name is Joe");
+    // });
+
+    // btn.removeEventListener('click', foo);
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <div id="main">
+    
+            <h1 id="title">Hello World!</h1>
+    
+            <p id="hint">This is a simple paragraph.</p>
+    
+        </div>
+
+        <p id="content">
+            Lorem ipsum dolor sit.
+        </p>
+    
+    
+    
+        <script>
+    
+            var newDiv = document.createElement('div');
+            var newContent = document.createTextNode('Hi, how are you doing?');
+            newDiv.appendChild(newContent);
+            var currentDiv = document.getElementById('main').appendChild(newDiv);
+            
+    
+            var content = document.getElementById('content').innerHTML;
+
+            console.log('content:', content);
+
+
+
+            var mainDiv = document.getElementById('main');
+            // mainDiv.innerHTML = '<p> see see see </p>'
+    
+        </script>
+    
+    </body>
+</body>
+</html>
