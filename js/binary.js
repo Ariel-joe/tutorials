@@ -73,8 +73,9 @@ function binarySearch (SortedArray, target) {
     return -1;
 }
 
-let target = 25;
-const result = binarySearch(SortedArray, target);
+let target = 7;
+const arr3 = [1,2,3,4,5,6,7]
+const result = binarySearch(arr3, target);
 
 if (result !== -1) {
     console.log(`the target is at index: ${result}`) ;
