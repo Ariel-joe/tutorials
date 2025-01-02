@@ -278,3 +278,12 @@ console.log(str.replaceAll("o", "_"))
 // takes 2 parameters, the one to look for and the one to replace with
 
 
+
+
+let a1  = 'banana';
+let b = 'orange';
+
+[a1, b] = [b, a1]
+
+console.log(a1)
+console.log(b)

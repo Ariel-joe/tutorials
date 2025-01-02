@@ -1,4 +1,4 @@
-function selectionSort(arr) {
+const selectionSort = (arr) => {
     const n = arr.length;
 
     for (let i = 0; i < n - 1; i++) {
@@ -7,7 +7,7 @@ function selectionSort(arr) {
 
         // Check the rest of the array for a smaller element
         for (let j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
+            if (arr[j] < arr[minIndex]) {   
                 minIndex = j; // Update the index of the smallest element
             }
         }
@@ -23,7 +23,6 @@ function selectionSort(arr) {
     return arr; // Return the sorted array
 }
 
-// Example usage:
 const numbers = [64, 25, 12, 22, 11];
 console.log("Unsorted Array:", numbers);
 const sortedArray = selectionSort(numbers);
@@ -34,13 +33,13 @@ console.log("Sorted Array:", sortedArray);
 
 
 
-let a = 'banana';
-let b = 'orange';
+// let a = 'banana';
+// let b = 'orange';
 
-[a, b] = [b, a];
+// [a, b] = [b, a];
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
 
 
 
